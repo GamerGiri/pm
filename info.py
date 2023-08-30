@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '25479482'))
 API_HASH = environ.get('API_HASH', '6ab604ff91a73fb91cc6526818e28ab1')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6288479784:AAHBfE8CrEiofXp7GKyWJe_LVJ3Clr8rSjk")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6343320109:AAHSmV7hRMO6y-LBTWFKDcxVxLw5a46drH8")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -31,7 +31,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5736579519').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001747872638')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001915248571')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -63,7 +63,7 @@ PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Cinema_Blasterz')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Cinema_Blasterz')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001743072559'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001523967455'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Cinema_Blasterz')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
